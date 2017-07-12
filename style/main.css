@@ -1,0 +1,185 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+body{
+	font-family: 'Lora', 'serif'
+}
+
+/* The main menu is initially hidden */
+#main-menu{
+	background-color: #333;
+	color: white;
+	display: none;
+	position: fixed;
+	width: 33.3333333%;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	font-size: 2em;
+	opacity: .9;
+
+}
+
+#main-menu h3{
+	padding: 5%;
+	padding-left: 9%;
+	font-size: 1.5em;
+}
+
+#main-menu ul{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#main-menu ul a, #main-menu ul a:hover, #main-menu ul a:visited, #main-menu ul a:link, #main-menu ul a:active{
+	padding: 5%;
+	padding-left: 0;
+	color: #ddd;
+	text-decoration: none;
+	background-color: transparent;
+	border-bottom: #ddd solid .2px;
+}
+
+/* #main-menu ul a:hover{
+	background-color: #000e16;
+} */
+
+/* The menu and close menu buttons */
+#openNav, #closeNav{
+	top: 5vh;
+	position: fixed;
+	background-color: transparent;
+	border: none;
+	font-size: 4em;
+	z-index: 1001;
+}
+
+#openNav{
+	right: 5%;
+}
+
+#closeNav{
+	right: 35%;
+	/* display: none; */
+	opacity: 0;
+}
+
+/* The main settings */
+main{
+	padding: 3% 10%; 
+}
+h1{
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+/* The box that stores each featured img */
+.featured{
+	margin-top: 30px;
+}
+
+.featured:hover{
+	cursor: pointer;
+}
+
+.featured .hidden-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 1em;
+	transform: translate(-50%, -50%);
+	color: #eee;
+	text-align: center;
+}
+
+.featured .hidden-text h3{
+	font-size: 2.5em;
+}
+
+.featured .hidden-text p{
+	display: none;
+}
+
+.featured  img{
+	width: 100%;
+	padding: 5%;
+}
+
+.featured span{
+	opacity: .5;
+}
+
+/* Footer */
+footer{
+	padding: 3%;
+	background-color: #eee;
+}
+
+#contact form{
+	border-right: .5px #666 solid;
+	padding-bottom: 1%;
+}
+
+footer h3{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+footer ul{
+	text-align: center;
+	list-style: none;
+}
+
+footer ul li{
+	display: inline-block;
+	padding: 1%;
+}
+
+footer ul li a, footer ul li a:hover, footer ul li a:visited, footer ul li a:link, footer ul li a:active{
+	font-size: 1em;
+	border: 1px solid #999;
+	padding: 10px;
+	color: #555;
+}
+
+footer ul li:last-child a{
+	padding: 10px 8px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+
+/* MENU ANIMATION */
+
+/* Disappearing either the button that shows menu or  the button that hide it */
+.fadingOut{
+	transition: .5s;	
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+	transform: rotate(180deg);
+	opacity: 0;
+	visibility: hidden;
+}
+/* Appearing either the button that shows menu or  the button that hide it */
+.fadingIn{
+	transition: .5s;	
+	-ms-transform: rotate(-180deg); /* IE 9 */
+	-webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
+	transform: rotate(-180deg);
+	opacity: 1 !important;
+}
+
+
+#cover-page{
+	position: fixed;
+	width: calc(100% - 33.3333333%);
+	height: 100vh;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	display: none;	
+}
